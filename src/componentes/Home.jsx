@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="m-20">
       <div className="flex justify-center">
-        <img src={logo_burger_home} width="320" height="320" alt="" />
+        <img src={logo_burger_home} width="320" height="320" alt="logo principal de la interfaz web" />
       </div>
       <div className="flex justify-center space-x-10">
         <Link to="/waiter">

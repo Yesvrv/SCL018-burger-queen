@@ -3,11 +3,9 @@ import ClientForm from "./ClientForm";
 import MenuOrder from "./MenuOrder";
 import Header from "../Header";
 
-
 const Waiter = () => {
 
   return (
-
     <div className="w-full container-lg">
       <Header />
       <div className="flex flex-row justify-evenly">
@@ -22,7 +20,6 @@ const Waiter = () => {
         </div>
       </div>
     </div>
-
   )
 };
 

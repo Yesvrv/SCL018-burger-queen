@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 
+//método render recibe dos parámetros. Primero va lo que queremos insertar y el segundo es dónde lo insertaremos (montar).
 ReactDOM.render(
   <BrowserRouter>
     <React.StrictMode>

@@ -8,10 +8,10 @@ import Waiter from "./componentes/waiter/Waiter";
 import Kitchen from "./componentes/kitchen/Kitchen";
 import ToDelivery from "./componentes/delivery/ToDelivery";
 
-
 const dataMenu = menu;
 export const ContextProducts = React.createContext();
 
+// componente principal de la aplicación
 const App = () => {
   //estado data del cliente para pasar a resumeOrder y a clientForm. El input comienza vacío
   const [name, changeName] = useState("");
@@ -37,11 +37,12 @@ const App = () => {
   const addProducts = (dish) => {
     return setProducts({
       ...products,
-      resumeOrder: products.resumeOrder.find((item) => item.id === dish.id)
-        ? products.resumeOrder.map((item) =>
-          item.id === dish.id
-            ? { ...item, count: item.count + 1 }
-            : item
+      // find devuelve el valor del primer elemento del arreglo que cumple con la función
+      resumeOrder: products.resumeOrder.find((product) => product.id === dish.id)
+        ? products.resumeOrder.map((product) =>
+          product.id === dish.id
+            ? { ...product, count: product.count + 1 }
+            : product
         )
         : [...products.resumeOrder, { ...dish, count: 1 }]
     });
@@ -50,7 +51,7 @@ const App = () => {
   const removeFromOrder = (id) => {
     setProducts({
       ...products,
-      resumeOrder: products.resumeOrder.filter((item) => item.id !== id)
+      resumeOrder: products.resumeOrder.filter((product) => product.id !== id)
     });
   };
 
@@ -64,10 +65,10 @@ const App = () => {
   const increase = (id) => {
     setProducts({
       ...products,
-      resumeOrder: products.resumeOrder.map((item) =>
-        item.id === id
-          ? { ...item, count: item.count + 1 }
-          : item
+      resumeOrder: products.resumeOrder.map((product) =>
+        product.id === id
+          ? { ...product, count: product.count + 1 }
+          : product
       )
     });
   };
@@ -75,16 +76,18 @@ const App = () => {
   const decrease = (id) => {
     setProducts({
       ...products,
-      resumeOrder: products.resumeOrder.map((item) =>
-        item.id === id
-          ? { ...item, count: item.count > 1 ? item.count - 1 : 1 }
-          : item
+      resumeOrder: products.resumeOrder.map((product) =>
+        product.id === id
+          ? { ...product, count: product.count > 1 ? product.count - 1 : 1 }
+          : product
       )
     });
   };
 
   const totalOrderAmount = products.resumeOrder
+    // ejecuta una función reductora sobre cada elemento del arreglo, devuelve un único valor
     .reduce((total, dish) => (total = total + dish.price * dish.count), 0)
+    // formateamos el monto total para que el valor devuelto contenga 2 dígitos decimales 
     .toFixed(2);
 
   const resumeProps = {
