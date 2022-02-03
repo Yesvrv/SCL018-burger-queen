@@ -34,6 +34,7 @@ const Orders = ({ name, table, order, time, id }) => {
   //     )
   //   }
   // })
+  
   const changeStatus = () => {
     setStatusReady({
         ...statusReady,
@@ -56,8 +57,7 @@ const Orders = ({ name, table, order, time, id }) => {
   }
 
   return (
-    // onSubmit={updateStatus}
-    <form action="" onSubmit={(e) => changeStatus(e.target)}>
+    <form action="" onSubmit={updateStatus}>
       <div className="flex flex-col justify-between mx-2 my-4 px-2 bg-opacity-50 shadow-lg rounded min-w-75 h-80">
         <div className="flex flex-col md:overflow-y-auto overflow-x-hidden w-73 mr-2 p-3">
           <h2 className="font-extrabold">Mesa {table}</h2>
@@ -72,7 +72,7 @@ const Orders = ({ name, table, order, time, id }) => {
         <div className="flex justify-center m-3">
           <Button
             className="text-gray-800"
-            onClick={Alert}
+            onClick={changeStatus}
             type="submit"
             color="amber"
             buttonType="filled"
