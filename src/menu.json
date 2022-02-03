@@ -1,0 +1,119 @@
+{ "drinks": [
+    {
+    "id": "d1",
+    "name": "Café Americano",
+    "price": 5.00,
+    "category": "Drinks"
+    },
+    {
+    "id": "d2",
+    "name": "Café con Leche",
+    "price": 5.00,
+    "category": "Drinks"
+    },
+    {
+    "id": "d3",
+    "name": "Jugo Natural",
+    "price": 1.50,
+    "category": "Drinks"
+    },
+    {
+    "id": "d4",
+    "name": "Agua Mineral 500ml",
+    "price": 10.00,
+    "category": "Drinks"
+    },
+    {
+    "id": "d5",
+    "name": "Agua Mineral 750ml",
+    "price": 10.00,
+    "category": "Drinks"
+    },
+    {
+    "id": "d6",
+    "name": "Bebida 500ml",
+    "price": 10.00,
+    "category": "Drinks"
+    },
+    {
+    "id": "d7",
+    "name": "Bebida 750ml",
+    "price": 10.00,
+    "category": "Drinks"
+    }
+],
+
+"food": [
+    {
+    "id": "f1",
+    "name": "Sandwich Jamón-Queso",
+    "price": 7.00,
+    "category": "Food"
+    },
+    {
+    "id": "f2",
+    "name": "Hamburguesa Simple Carne",
+    "price":7.00,
+    "category": "Food"
+    },
+    {
+    "id": "f3",
+    "name": "Hamburguesa Simple Pollo",
+    "price":7.00,
+    "category": "Food"
+    },
+    {
+    "id": "f4",
+    "name": "Hamburguesa Simple Veg",
+    "price":7.00,
+    "category": "Food"
+    },
+    {
+    "id": "f5",
+    "name": "Hamburguesa Doble Carne",
+    "price":8.00,
+    "category": "Food"
+    },
+    {
+    "id": "f6",
+    "name": "Hamburguesa Doble Pollo",
+    "price":8.00,
+    "category": "Food"
+    },
+    {
+    "id": "f7",
+    "name": "Hamburguesa Doble Veg",
+    "price":8.00,
+    "category": "Food"
+    }
+],
+"sideDish": [
+    
+    {
+    "id": "s1",
+    "name": "Papas Fritas",
+    "price": 4.00,
+    "category": "Side dish"
+    },
+    {
+    "id": "s2",
+    "name": "Aros de Cebolla",
+    "price": 4.00,
+    "category": "Food"
+    }
+],
+"extra": [
+    {
+    "id": "e1",
+    "name": "Queso",
+    "price": 1.00,
+    "category": "Extra"
+    },
+    {
+    "id": "e2",
+    "name": "Huevo",
+    "price": 1.00,
+    "category": "Extra"
+    }
+]
+}
