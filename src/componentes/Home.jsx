@@ -4,11 +4,11 @@ import Button from "@material-tailwind/react/Button";
 
 const Home = () => {
   return (
-    <div className="m-20">
-      <div className="flex justify-center">
+    <section className="m-20">
+      <figure className="flex justify-center">
         <img src={logo_burger_home} width="320" height="320" alt="logo principal de la interfaz web" />
-      </div>
-      <div className="flex justify-center space-x-10">
+      </figure>
+      <nav className="flex justify-center space-x-10">
         <Link to="/waiter">
           <Button
             color="teal"
@@ -41,8 +41,8 @@ const Home = () => {
             Cocina
           </Button>
         </Link>
-      </div>
-    </div>
+      </nav>
+    </section>
   );
 };
 

@@ -5,16 +5,15 @@ import Drinks from "./Drinks";
 const MenuOrder = () => {
   const [openTab, setOpenTab] = useState(1);
   return (
-    <div className="flex flex-wrap">
+    <section className="flex flex-wrap">
       <div className="w-full">
         <div className="flex flex-row">
         <ul className="m-0 list-none flex-wrap pb-4 ">
           <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
-            <span className={
-                "text-sm font-bold uppercase px-16 py-3 shadow-lg rounded block leading-normal " +
-                (openTab === 1
+            <div className={
+                `text-sm font-bold uppercase px-16 py-3 shadow-lg rounded block leading-normal ${openTab === 1
                   ? "text-white bg-teal-600"
-                  : "text-teal-600 bg-opacity-50")
+                  : "text-teal-600 bg-opacity-50"}`
               }
               onClick={e => {
                 e.preventDefault();
@@ -22,16 +21,15 @@ const MenuOrder = () => {
               }}
             >
               <i className="fas fa-glass-whiskey text-base mr-1"></i> Bebidas
-            </span>
+            </div>
           </li>
           </ul>
           <ul className="m-0 list-none flex-wrap pb-4 ">
           <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
-            <span className={
-                "text-sm font-bold uppercase px-16 py-3 shadow-lg rounded block leading-normal " +
-                (openTab === 2
+            <div className={
+                `text-sm font-bold uppercase px-16 py-3 shadow-lg rounded block leading-normal ${openTab === 2
                   ? "text-white bg-teal-600"
-                  : "text-teal-600 bg-opacity-50")
+                  : "text-teal-600 bg-opacity-50"}`
               }
               onClick={e => {
                 e.preventDefault();
@@ -39,7 +37,7 @@ const MenuOrder = () => {
               }}
             >
               <i className="fas fa-hamburger text-base mr-1"></i>  Comidas
-            </span>
+            </div>
           </li>
           </ul>
           </div>
@@ -57,7 +55,7 @@ const MenuOrder = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
