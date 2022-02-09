@@ -6,7 +6,7 @@ const ClientForm = () => {
   const globalContext = useContext(ContextProducts);
 
   return (
-    <div className="mt-8">
+    <section className="mt-8">
       <h2 className="font-bold text-gray-600">MENU</h2>
       <div className="flex flex-row">
         <div className="w-64 m-3 mt-6">
@@ -42,7 +42,7 @@ const ClientForm = () => {
           </label>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

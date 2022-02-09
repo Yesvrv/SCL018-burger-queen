@@ -25,8 +25,8 @@ const Food = () => {
             iconOnly={false}
             ripple="light">
             <div className="flex justify-around items-center ">
-              <div className="flex item w-64 h-8 items-center">{dish.name}</div>
-              <div className="flex item w-8 h-8 items-center">${dish.price}</div>
+              <span className="flex item w-64 h-8 items-center">{dish.name}</span>
+              <span className="flex item w-8 h-8 items-center">${dish.price}</span>
             </div>
           </Button>
         );
@@ -46,8 +46,8 @@ const Food = () => {
             iconOnly={false}
             ripple="light">
             <div className="flex justify-around items-center ">
-              <div className="flex item w-64 h-8 items-center">{sideDish.name}</div>
-              <div className="flex item w-8 h-8 items-center">${sideDish.price}</div>
+              <span className="flex item w-64 h-8 items-center">{sideDish.name}</span>
+              <span className="flex item w-8 h-8 items-center">${sideDish.price}</span>
             </div>
           </Button>
         );
@@ -68,8 +68,8 @@ const Food = () => {
             iconOnly={false}
             ripple="light">
             <div className="flex justify-around items-center ">
-              <div className="flex item w-64 h-8 items-center">{extra.name}</div>
-              <div className="flex item w-8 h-8 items-center">${extra.price}</div>
+              <span className="flex item w-64 h-8 items-center">{extra.name}</span>
+              <span className="flex item w-8 h-8 items-center">${extra.price}</span>
             </div>
           </Button>
 
