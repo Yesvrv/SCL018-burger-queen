@@ -91,8 +91,8 @@ const ResumeOrder = () => {
           <div key={dish.id} className="flex justify-center">
             <div className="w-80 h-11 flex justify-center border-solid border-2 border-teal-500 rounded-md m-2 font-semibold text-gray-500 bg-none">
               <div className="flex items-center whitespace-pre px-2 text-xs uppercase w-64">
-                <div className="flex item w-48 h-8 items-center">{dish.name}</div>
-                <div className="flex item w-8 h-8 items-center">${dish.price}</div>
+                <span className="flex item w-48 h-8 items-center">{dish.name}</span>
+                <span className="flex item w-8 h-8 items-center">${dish.price}</span>
               </div>
               <div className="flex w-20">
                 <button

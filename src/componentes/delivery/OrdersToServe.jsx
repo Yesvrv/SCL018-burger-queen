@@ -32,7 +32,7 @@ const OrdersToServe = ({ name, table, order, time, id }) => {
 
     return (
     <form action="" onSubmit={updateStatus}>
-        <div className="flex flex-col justify-between mx-2 my-4 px-2 bg-opacity-50 shadow-lg rounded min-w-75 h-80">
+        <section className="flex flex-col justify-between mx-2 my-4 px-2 bg-opacity-50 shadow-lg rounded min-w-75 h-80">
         <div className="flex flex-col md:overflow-y-auto overflow-x-hidden min-w-73 mr-2 p-3">
             <h2 className="font-extrabold">Mesa {table}</h2>
             <span>Hora: {time}</span>
@@ -57,7 +57,7 @@ const OrdersToServe = ({ name, table, order, time, id }) => {
             Entregado
             </Button>
         </div>
-        </div>
+        </section>
     </form>
     );
 }

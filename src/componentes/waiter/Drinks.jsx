@@ -23,8 +23,8 @@ const Drinks = () => {
             iconOnly={false}
             ripple="light">
             <div className="flex justify-around items-center">
-              <div className="flex item w-64 h-8 items-center">{drink.name}</div>
-              <div className="flex item w-8 h-8 items-center">${drink.price}</div>
+              <span className="flex item w-64 h-8 items-center">{drink.name}</span>
+              <span className="flex item w-8 h-8 items-center">${drink.price}</span>
             </div>
           </Button>
         );
