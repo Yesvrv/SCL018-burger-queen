@@ -34,6 +34,7 @@ const Orders = ({ name, table, order, time, id }) => {
   //     )
   //   }
   // })
+  
   const changeStatus = () => {
     setStatusReady({
         ...statusReady,
@@ -71,7 +72,7 @@ const Orders = ({ name, table, order, time, id }) => {
         <div className="flex justify-center m-3">
           <Button
             className="text-gray-800"
-            onClick={Alert}
+            onClick={changeStatus}
             type="submit"
             color="amber"
             buttonType="filled"
