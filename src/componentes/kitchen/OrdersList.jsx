@@ -21,7 +21,7 @@ const OrdersList = () => {
       }
     )
   }, [])
-
+  
   let pendingOrders = orders.filter((order) => {
     return order.status.status === "Pendiente";
   })
@@ -39,7 +39,7 @@ const OrdersList = () => {
 
   return (
     // si existen órdenes, entonces muestra el contenido (div) || renderizado condicional
-    orders.length > 0 &&
+    // orders.length > 0 &&
     <div className="flex flex-wrap justify-start mx-5">
       {sortedPendingOrders.map((order) => {
         return <Orders

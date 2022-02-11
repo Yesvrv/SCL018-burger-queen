@@ -51,6 +51,7 @@ const App = () => {
   const removeFromOrder = (id) => {
     setProducts({
       ...products,
+      //filter crea un nuevo arreglo
       resumeOrder: products.resumeOrder.filter((product) => product.id !== id)
     });
   };
