@@ -17,7 +17,7 @@ ReactJS - Interfaz web SPA - Tablet First
 
 Un pequeño restaurante de hamburguesas, que está creciendo, necesita una
 interfaz en la que puedan tomar pedidos usando una _tablet_, y enviarlos
-a la cocina para que se preparen ordenada y eficientemente
+a la cocina para que se preparen ordenada y eficientemente.
 
 ## 2. Información del cliente
 
