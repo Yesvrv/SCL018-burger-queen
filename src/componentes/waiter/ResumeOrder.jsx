@@ -92,7 +92,7 @@ const ResumeOrder = () => {
             <div className="w-80 h-11 flex justify-center border-solid border-2 border-teal-500 rounded-md m-2 font-semibold text-gray-500 bg-none">
               <div className="flex items-center whitespace-pre px-2 text-xs uppercase w-64">
                 <span className="flex item w-48 h-8 items-center">{dish.name}</span>
-                <span className="flex item w-8 h-8 items-center">{dish.price}</span>
+                <span className="flex item w-8 h-8 items-center">$ {dish.price}</span>
               </div>
               <div className="flex w-20">
                 <button
@@ -118,7 +118,7 @@ const ResumeOrder = () => {
         ))}
       </div>
       <div className="flex justify-center relative my-2 min-w-0 break-words bg-opacity-50 w-full shadow-lg rounded">
-        <h3 className="font-bold my-4 text-gray-600 item w-48">Total {totalOrder}</h3>
+        <h3 className="font-bold my-4 text-gray-600 item w-48">Total $ {totalOrder}</h3>
         <div className="flex justify-center my-4 ">
           <Button
             type='submit'
