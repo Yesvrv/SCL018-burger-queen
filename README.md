@@ -88,8 +88,7 @@ costo total.
 Este proyecto fue resuelto en duplas y la lógica del proyecto está implementada completamente 
 en JavaScript(ES6+), HTML, CSS, ReactJS y empaquetada de manera automatizada.
 
-La aplicación es una _Single Page App_. Los pedidos se toman desde una
-_tablet_, en una web app **responsive**.
+Los pedidos se toman desde una _tablet_, en una web app **responsive**.
 
 La aplicación desplegada tiene 80% o más en las puntuaciones de
 Performance, Accessibility y Best Practices de Lighthouse.
