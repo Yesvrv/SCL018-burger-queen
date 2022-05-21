@@ -68,14 +68,6 @@ costo total.
 
 ## 3. Diseño visual de la aplicación
 
-### Prototipo de alta fidelidad
-
-
-![prototipo-1](src/assets/img/prototipo/prototipo_1.png)
-
-![prototipo_2](src/assets/img/prototipo/prototipo_2.png)
-
-
 ### Interfaz desplegada
 
 ![homepage-waiter-view](src/assets/img/interfaz/homepage_waiter_view.png)
