@@ -8,7 +8,6 @@ ReactJS - Interfaz web SPA - Tablet First
   - [1. Preámbulo](#1-preámbulo)
   - [2. Información del cliente](#2-información-del-cliente)
   - [3. Diseño visual de la aplicación](#3-diseño-visual-de-la-aplicación)
-- [Prototipo de alta fidelidad](#prototipo-de-alta-fidelidad)
 - [Interfaz desplegada](#interfaz-desplegada)
   - [4. Consideraciones generales](#4-consideraciones-generales)
 ***
